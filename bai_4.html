@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        body {
+            background-color: #121212; 
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .create-project {
+            background-color: #1E1E1E;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: 100px auto;
+            color: white;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        p {
+            color: gray;
+            margin: 10px 0 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            min-width: 100%;
+            height: 40px; 
+            padding: 0px 10px; 
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #2A2A2A;
+            color: white;
+            box-sizing: border-box; 
+        }
+
+        .create-project select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #2A2A2A;
+            color: white;
+        }
+
+        select {
+            appearance: none; 
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            padding: 10px; 
+            height: 40px; 
+            
+            background-color: #000; 
+            color: #ddd; 
+            
+            font-size: 16px; 
+            font-family: Arial, sans-serif;
+            
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ddd"><path d="M7 10l5 5 5-5H7z"/></svg>'); 
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 16px 16px;
+            
+            border: 1px solid #555;
+            border-radius: 5px;
+        }
+        
+        select:focus {
+            border-color: #888; 
+        }
+        
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cancel-button, .deploy-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .cancel-button {
+            background-color: #333;
+            color: white;
+        }
+
+        .deploy-button {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .deploy-button:hover {
+            background-color: #0056b3;
+        }
+
+        .cancel-button:hover {
+            background-color: #555;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="create-project">
+        <h2>Create project</h2>
+        <p>Deploy your new project in one-click.</p>
+        <form>
+            <label for="project-name">Name</label>
+            <input type="text" id="project-name" placeholder="Name of your project">
+            
+            <label for="framework">Framework</label>
+            <select id="framework">
+                <option value="one">Select 1</option>
+                <option value="two">Select 2</option>
+                <option value="three">Select 3</option>
+                <option value="four">Select 4</option>
+            </select>
+            
+            <div class="buttons">
+                <button type="button" class="cancel-button">Cancel</button>
+                <button type="submit" class="deploy-button">Deploy</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
