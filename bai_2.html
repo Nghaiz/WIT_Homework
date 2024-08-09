@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Button</title>
+        <!-- <link rel="stylesheet" href="style2.css"> -->
+
+        <style>
+            body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 5px 20px;
+            border: 1px solid #b21065;
+            border-radius: 20px;
+            background-image: 
+                linear-gradient(
+                    to bottom, #fff9, transparent 50% 90%, #f5cbbc99
+                ),
+                repeating-linear-gradient(
+                    60deg, #bc058255 0 10px, transparent 10px 20px
+                ),
+                linear-gradient(
+                    to bottom, #ef08a6, #ee6c8f
+                );
+            color: white;
+            font-family: cursive;
+            font-weight: bold;
+            text-shadow: 0 1px 0 #efb7de;
+            box-shadow: 
+                0 10px 0 #0005, 
+                0 5px 0 #bd1360,
+                0 4px 0 7px #fff,
+                0 0 30px 10px #e260ae;
+            transition: 0.3s;
+        }
+
+        button:active{
+            box-shadow: 
+                0 0px 0 #0005, 
+                0 0px 0 #bd1360,
+                0 0px 0 7px #fff,
+                0 0 20px 15px #e260ae;
+            transform: translateY(5px);
+        }
+        </style>
+
+    </head>
+
+    <body>
+        <button class="butt">Click Me</button>
+    </body>
+</html>
